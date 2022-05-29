@@ -513,13 +513,45 @@ text-align: center;
   padding: .5rem  ;
   
 }
+/* /////RAMA ANIMACIONES///// */
+.banner h1{
+  transition: 4s;
+
+}
+.banner__text h2{
+  transition: 2s;
+}
+.banner__text span{
+
+  transition: ease-out;
+}
+
+.principal__nov-1:hover{
+  
+   transform: scale(2.5) translateX(5rem) ;
+   transition: .5s;
+
+}
+.principal__nov-2:hover{
+  
+  transform: scale(3)  ;
+  transition: .5s;
+
+
+}
+.principal__nov-3:hover{
+  
+  transform: scale(3) translateX(-8rem) ;
+  transition: .5s;
+
+
+}
 
 
 
 
 
-
-
+/* ///////////////////////////// */
 /* iconos responsive */
 
 .mostrar-menu,
@@ -606,6 +638,32 @@ text-align: center;
 .persona img{
   width:15vw;
 }
+/* animaciones */
+.principal__nov-1:hover{
+  
+  transform: scale(2)  ;
+  transition: .5s;
+
+}
+.principal__nov-2:hover{
+ 
+ transform: scale(2)  ;
+ transition: .5s;
+
+
+}
+.principal__nov-3:hover{
+ 
+ transform: scale(2)  ;
+ transition: .5s;
+
+
+}
+
+
+/* /////////////// */
+
+
 /* /////////CLASES/////////// */
 
 .clases__banner h1{
