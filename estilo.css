@@ -101,7 +101,7 @@ footer {
    width: 70vw;
 } 
   .examenes{
-    height: 10rem;
+    height: 20rem;
     background-color: #0a8fee; 
     display: flex; 
     justify-content: space-around;
@@ -113,10 +113,19 @@ footer {
     border-radius: 0.2rem;
     box-shadow: 0.2rem 0.2rem 0.3rem;
   }
+.foto{
+  width: 100px !important;
+}
+ .conta{
+   width: 200px;
+   height: 200px;
+ }
+  
   .promo1{
     background: url(./assets/img/promo1.jpg);
     background-position: center;
     background-size: cover;
+    
   }
   .promo2{
     background: url(./assets/img/promo2.jpg);
