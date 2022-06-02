@@ -31,11 +31,11 @@
 
         <li><a href="./clases.html">Clases</a></li>
 
-        <li><a href="./galeria.html" class="active">Galeria</a></li>
+        <li><a href="./galeria.html" >Galeria</a></li>
 
         <li><a href="./contacto.html">Contacto</a></li>
 
-        <li> <a href="./aboutus.html">Aboutus</a></li>
+        <li> <a href="./aboutus.html" class="active">About us</a></li>
 
         <label for="check" class="esconder-menu">&#215</label>
       </ul>
@@ -44,7 +44,7 @@
   </header>
 
 
-  <main>
+  <main class="container">
     <section class="sobrenos">
       <article class=" sobrenos__caja sobrenos__1">
         <h1>Nuestra experiencia</h1>
@@ -73,7 +73,27 @@
         <img src="../assets/img/persona3.jpg" alt="">
       </article>
       <article class=" sobrenos__4">
-        <div class="valores">
+        <div class="row titulos">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body card-mod">
+                <h5 class="card-title">Valores</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto quis dolorem ullam dolorum at quibusdam, eius eaque, sunt, repudiandae delectus et saepe tenetur maiores optio expedita vero laudantium repellat </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body card-mod">
+                <h5 class="card-title">vision</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eligendi eveniet asperiores omnis excepturi deleniti voluptate, illo ullam, inventore suscipit earum. At corrupti qui assumenda adipisci iusto quisquam officia veniam!</p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="valores">
           <h2>valores</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi odit porro nobis at eveniet eaque eligendi
@@ -88,22 +108,46 @@
 
           </p>
         </div>
-      </article>
+      </article> -->
     </section>
 
 
   </main>
 
   <footer>
-    <div class="logo"> <a href="../index.html"> <img src="../assets/img/logo.svg"></a></div>
+    <div class="footer1">
+      <div class="nav__footer ">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./clases.html">CLASES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./galeria.html">GALERIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./aboutus.html">ABOUT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+   <div class="footer2">
+      
+    <div class="logo"> <a href="../index.html"> <img src="../assets/img/logo.svg"></a></div>
+   
     <div class="redes">
       <div class="iconos">
         <a target="blank" href="https://www.instagram.com/instituto.cima/"><img src="../assets/img/instagram.svg"
             alt=""></a>
         <a target="blank" href="https://www.facebook.com/Instituto-de-Ingles-Cima-137679846391355"><img
             src="../assets/img/facebook.svg" alt=""></i></a>
-        
+
       </div>
       <span>Seguinos</span>
       <div class="dire">
@@ -111,6 +155,8 @@
       </div>
 
     </div>
+   </div>
+
 
 
   </footer>
