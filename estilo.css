@@ -231,7 +231,7 @@ footer {
   .principal__opiniones-titulo{
     display: flex;
     justify-content: center;
-    background:rgba(102, 102, 102, 0.411) ;
+    background:rgba(102, 102, 102, 0.596) ;
   }
   .principal__opiniones-titulo i{
     font-size: 3rem;
@@ -242,7 +242,7 @@ footer {
   .principal__opiniones h3{
     text-align: center;
     font-size: 2rem;
-    color: rgb(26, 81, 133);
+    color: #fff;
     text-decoration:underline  ;
     padding: 1rem;
   }
