@@ -534,7 +534,12 @@ text-align: center;
 
   transition: ease-out;
 }
+/*///desde la portatil///*/
+.promo:hover{
+  transition: .5s;
+  transform: scale(1.5);
 
+}
 .principal__nov-1:hover{
   
    transform: scale(2.5) translateX(5rem) ;
@@ -834,3 +839,4 @@ text-align: center;
 
 
 
+   }
