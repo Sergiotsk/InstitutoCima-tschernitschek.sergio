@@ -6,7 +6,7 @@
 }
 body {
   background-image: url(./assets/img/fondo.jpg);
-  background-repeat: no-repeat;  
+  background-repeat: repeat-y;  
   background-size: cover;
   background-position: center; 
 }
@@ -73,7 +73,7 @@ main{
 footer {
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: 100%;
   align-items: center;
   
   background: radial-gradient(circle, rgb(5, 115, 248), rgb(3, 50, 136));
@@ -138,7 +138,7 @@ footer {
 } 
   .examenes{
     height: 10rem;
-    background-color: #0a8fee; 
+    /* background-color: #0a8fee;  */
     display: flex; 
     justify-content: space-around;
     align-items: center; 
@@ -172,11 +172,7 @@ footer {
     background-color: #09b8ee; 
   }
  
-  .principal__nov{   
-    background-color: #FFB703;   
-    
-
-  }
+  
   .principal__nov h2{
     text-align: center;
     padding: 1rem;
@@ -196,10 +192,8 @@ footer {
 
      width: 15rem;
      height: 8rem;
-     background-color: #1D3557;
      margin: 2rem 0;
      background: url(./assets/img/nov1.jpg);
-     background-position: center;
      background-size: cover;
      border-radius: 0.2rem;
      box-shadow: 0.2rem 0.2rem 0.3rem;
@@ -208,6 +202,7 @@ footer {
  
   .principal__videoyt{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem;
@@ -216,9 +211,45 @@ footer {
   .principal__videoyt iframe{
     width: 30rem;
     height: 20rem;
+    border-radius: .5rem;
    
     
   }
+  .youtube{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1.5rem;
+  }
+  .wordwall{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+  }
+  .wordwall div{
+    width: 40vw;    
+    margin: 1.5rem;
+  }
+  .wordwall iframe{
+    width: 100%;
+    border-radius: .5rem;
+  }
+  .video iframe{
+    width: 30rem;
+    margin: 1rem;
+  }
+  .principal__videoyt-span{
+   width: 30rem; 
+   height: 20rem;
+   background-color: #09b8ee;  
+   margin: 1rem; 
+  }
+  .juegos-titulo{
+    text-align: center;
+    padding: 1rem;
+  }
+
   .principal__opiniones-titulo{
     display: flex;
     justify-content: center;
@@ -442,7 +473,7 @@ align-items: center;
   display: flex;
   justify-content: center;   
  padding: 1rem;
-  height: 80vh;
+  height: 100%;
   color: rgb(255, 255, 255);
   font-weight: 100;
   
@@ -456,6 +487,7 @@ align-items: center;
 background: linear-gradient( rgba(57, 124, 163, 0.514),rgba(39, 64, 207, 0.308)), url(./assets/img/libros2.jpg);
 background-size: cover;
 
+
   
 }
 
@@ -463,6 +495,14 @@ background-size: cover;
 .formulario__text img{
   width: 2rem;
   margin: .5rem;
+}
+.mediosdepago__container{
+  width: 100%;
+  height: 40vh;
+  background-color: #197d9b;
+}
+.iconospago img{
+  width: 5rem;
 }
 
 
@@ -617,6 +657,14 @@ background-size: cover;
     color: #fff;
     font-size: 2.8vw;
     width: 80%; 
+  }
+  .wordwall{
+    flex-direction: column;
+   
+  }
+  .wordwall div{
+    width: 90vw;     
+    margin: 1.5rem;
   }
   .tit-ubicacion p {
     font-size: 1rem;    
