@@ -6,7 +6,7 @@
 }
 body {
   background-image: url(./assets/img/fondo.jpg);
-  
+  background-repeat: repeat-y;  
   background-size: cover;
   background-position: center; 
 }
@@ -46,8 +46,7 @@ ul a:hover{
   transition: 0.5s;
 }
 main{
-  grid-column: 1/ span 3;  
-  
+  grid-column: 1/ span 3;   
 
   }
   .nav__footer a{
@@ -73,9 +72,8 @@ main{
 footer {
   display: flex;
   flex-direction: column;
-  height: 60vh;
-  align-items: center;
-  
+  height: 100%;
+  align-items: center;  
   background: radial-gradient(circle, rgb(5, 115, 248), rgb(3, 50, 136));
   grid-column: 1/ span 3;
   padding: 0 2rem;
@@ -136,26 +134,17 @@ footer {
 .banner__text {
    width: 70vw;
 } 
-  .examenes{
-    height: 20rem;
-    background-color: #0a8fee; 
-    display: flex; 
-    justify-content: space-around;
-    align-items: center; 
-   
-   
-  }
+.examenes{
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
   .promo{
     border-radius: 0.2rem;
     box-shadow: 0.2rem 0.2rem 0.3rem;
   }
-.foto{
-  width: 100px !important;
-}
- .conta{
-   width: 200px;
-   height: 200px;
- }
+
+ 
   
   .promo1{
     background: url(./assets/img/promo1.jpg);
@@ -181,11 +170,7 @@ footer {
     background-color: #09b8ee; 
   }
  
-  .principal__nov{   
-    background-color: #FFB703;   
-    
-
-  }
+  
   .principal__nov h2{
     text-align: center;
     padding: 1rem;
@@ -205,10 +190,8 @@ footer {
 
      width: 15rem;
      height: 8rem;
-     background-color: #1D3557;
      margin: 2rem 0;
      background: url(./assets/img/nov1.jpg);
-     background-position: center;
      background-size: cover;
      border-radius: 0.2rem;
      box-shadow: 0.2rem 0.2rem 0.3rem;
@@ -217,6 +200,7 @@ footer {
  
   .principal__videoyt{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem;
@@ -225,13 +209,51 @@ footer {
   .principal__videoyt iframe{
     width: 30rem;
     height: 20rem;
+    border-radius: .5rem;
    
     
   }
+  .youtube{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1.5rem;
+  }
+  .wordwall{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+  }
+  .wordwall div{
+    width: 40vw;    
+    margin: 1.5rem;
+  }
+  .wordwall iframe{
+    width: 100%;
+    border-radius: .5rem;
+  }
+  .video iframe{
+    width: 30rem;
+    margin: 1rem;
+  }
+  .principal__videoyt-span{
+   width: 30rem; 
+   height: 20rem;
+   background-color: #09b8ee;  
+   margin: 1rem; 
+  }
+  .juegos-titulo{
+    text-align: center;
+    padding: 1rem;
+    background:rgba(102, 102, 102, 0.616) ;
+    color: #fff;
+  }
+
   .principal__opiniones-titulo{
     display: flex;
     justify-content: center;
-    background:rgba(102, 102, 102, 0.596) ;
+     background:rgba(102, 102, 102, 0.596) ;
   }
   .principal__opiniones-titulo i{
     font-size: 3rem;
@@ -243,8 +265,7 @@ footer {
     text-align: center;
     font-size: 2rem;
     color: #fff;
-    text-decoration:underline  ;
-    padding: 1rem;
+     padding: 1rem;
   }
  .principal__opiniones .caja-contenedor .caja{
   background-color:rgb(255, 255, 255) ;
@@ -310,6 +331,7 @@ height: 30vh;
  }
 .ubicacion {
  width: 70vw;
+ grid-column: 2 /span 3; 
 
 }
 .ubicacion iframe {
@@ -389,8 +411,8 @@ nav li {
   font-size: 5vw;
   text-shadow:0.1rem 0.1rem 0.1rem #000;
   width: 90vw;
-  margin: 2vw;
-}
+  padding: 2rem;
+  }
 .clases__banner p {
   color: #fff;
   font-size: 2.1vw;
@@ -403,59 +425,32 @@ nav li {
 }
 .clases{
   display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: space-around;
+  margin: 2rem; 
   flex-wrap: wrap;
   
-  
 }
-.clases__art{
-  display: flex;
-  flex-direction: row; 
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 2rem;   
-  border-radius: 0.5em;
-}
+.card-body-mod{
+display: flex;
+flex-direction: column;
+align-items: center;
 
-.clases__art img{
-  width:40rem; 
-  border-radius: 1rem;
-}
-.clases__art--text{
-  width: 30rem;
 
 }
-.clases__art p{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0.5rem; 
-  padding: 1rem; 
-  font-size: 1.2em;
-  text-align: justify;
-  align-self: center;
-  background-color:rgba(157, 224, 243, 0.753);
-  border-radius: 0.1em;
+.cardclases-mod{
+  box-shadow: .1rem .3rem 1rem #000;
+  margin: .5rem;
 }
-button{
-  width: 6.5rem;
-  margin-top: 0.4rem ;
-  padding: 0.3rem;
-  background-color: #12487a;
-  
- 
+.btn-mod{
+
+  background: radial-gradient(circle, rgb(5, 115, 248), rgb(3, 50, 136));
+
 }
-button a{
-  text-decoration: none;
-  font-family: "fredoka one";
-  margin: 0.5rem;
-  color: #fff;
-  
-}
+
+
+
 /* //////////Galeria/////////// */
+
 .galeria{
   margin: .5rem  ;
   display: grid;
@@ -470,73 +465,92 @@ button a{
 }
 .fotos__caja img {
   width: 30vw;
-  box-shadow:.1rem .1rem .2rem black;
-    
+  box-shadow:.1rem .1rem .2rem black;    
  
 }
+
 /* //////CONTACTO///////// */
+
 .formulario{
   display: flex;
   justify-content: center;   
-  margin: 0.5rem;
-  height: 80vh;
+  padding: 1rem;
+  height: 100%;
+  color: rgb(255, 255, 255);  
+  
 }
+
 .formulario__form{
  display: flex;
  align-items: center;
  flex-direction: column;
- width: 80%;
- background-color: rgba(102, 102, 102, 0.562);
-padding: .5rem;
+ width: 100%;
+ padding: 1rem;
+background: linear-gradient( rgba(57, 124, 163, 0.514),rgba(39, 64, 207, 0.308)), url(./assets/img/libros2.jpg);
+background-size: cover;
   
 }
-.formu{
-  height: 200px;
-}
-/* ..form{
-  display: flex;
-  flex-direction: column;
-  width: 15rem;
-  align-items: center; 
-  box-shadow: .1rem .1rem .2rem black;
-  background: linear-gradient(45deg, rgba(0, 102, 255, 0.795), rgba(0, 247, 255, 0.644));
-  border-radius: .2rm;
-  margin: 1em;     
-}
-form h1{
-  margin: .5em;
-}
-form input{
-  margin: 1em 0;
-  width: 90%;
- 
-}
-textarea{
-  height: 8em;
-  margin: 1em 0;
-}
-#enviar{
-  width: 5em;
-  justify-self: center;
-} */
-/* .formulario__text{
-  width: 30rem;
-  padding: .5rem;
-  margin: .5rem;
-  border-radius: .2rem;
-  background: linear-gradient(-45deg, rgba(0, 102, 255, 0.863), rgba(0, 247, 255, 0.938));
-  box-shadow:.1rem .1rem .2rem black;
-} */
-.formulario__form h2{
-  padding: 1.5rem;
-  text-align: center;
-}
+
 .formulario__text img{
   width: 2rem;
   margin: .5rem;
 }
 
+.mediosdepago__container{
+  width: 100%;
+  height: 60vh;
+  background-color: #195c9b;
+  margin-bottom: .5rem;
+  
+}
 
+.transferencia img{
+  width: 5rem;  
+}
+
+.transferencia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.cbu{
+  padding: 1rem;
+}
+
+.mercadopago img{
+  width: 15rem;
+  margin-top: 1.5rem;
+}
+
+.mercadopago{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.mediosdepago{
+  display: flex;
+  justify-content: space-evenly;
+}
+.cbu li{
+  list-style: none;  
+  font-size: .8rem;
+}
+.cvu li{
+  list-style: none;
+  font-size: .8rem;
+}
+.cvu{
+  padding: 1rem;
+}
+.fechasdepago{
+  text-align: center;
+  padding: .5rem;
+  font-size: .8rem;
+}
 
 /* ///////ABOUT US/////// */
 
@@ -545,38 +559,51 @@ textarea{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
   
 }
+
 .sobrenos__caja{
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 80vw;
-  margin: 1rem;
+  justify-content: space-around; 
   padding: .9rem;
-  background-color: #d37904;
   box-shadow: .2rem .2rem .3rem;
   border-radius: .2rem  ;
 
 }
 .sobrenos__1{
   flex-direction: column;
+  background-color: #91a6b488;
 }
+
+.sobrenos__2{
+  background-color: #09b9ee57;
+}
+
+.sobrenos__3{
+  background-color: #91a6b488;
+}
+
 .sobrenos__caja img{
   border-radius: 50%;
 }
+
 .sobrenos__caja p{
   margin: .5rem;
   padding: .5rem;
 }
+
 .sobrenos__4{
  display: flex;
  justify-content: space-evenly;
- width: 90vw;
- margin: 1.5rem;
+ width: 100%;
+ margin: 1rem;
 }
+
 .card-mod{
   background-color: #0a8fee;
+  padding: 1.5rem;
 }
 .titulos h5{
   text-align: center;
@@ -588,6 +615,7 @@ textarea{
   
 }
 /* /////RAMA ANIMACIONES///// */
+
 .banner h1{
   transition: 4s;
 
@@ -599,7 +627,9 @@ textarea{
 
   transition: ease-out;
 }
+
 /*///desde la portatil///*/
+
 .promo:hover{
   transition: .5s;
   transform: scale(1.5);
@@ -625,10 +655,6 @@ textarea{
 
 
 }
-
-
-
-
 
 /* ///////////////////////////// */
 /* iconos responsive */
@@ -673,7 +699,7 @@ textarea{
 
   nav li {
     display: block;
-    padding: 20px;
+    padding: .7rem;
   }
 .principal__opiniones-titulo h3{
   font-size: 1.5rem;
@@ -693,6 +719,13 @@ textarea{
     font-size: 2.8vw;
     width: 80%; 
   }
+  .wordwall{
+    flex-direction: column;       
+  }
+  .wordwall div{
+    width: 90vw;     
+    margin: 1.5rem;
+  }
   .tit-ubicacion p {
     font-size: 1rem;    
     text-align: center;
@@ -702,7 +735,7 @@ textarea{
   }
 
   .tit-ubicacion span {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
     color: #1D3557;
@@ -722,7 +755,7 @@ textarea{
 .persona img{
   width:15vw;
 }
-/* animaciones */
+/*//// animaciones /////*/
 .principal__nov-1:hover{
   
   transform: scale(2)  ;
@@ -744,11 +777,6 @@ textarea{
 
 }
 
-
-
-/* /////////////// */
-
-
 /* /////////CLASES/////////// */
 
 .clases__banner h1{
@@ -768,25 +796,18 @@ textarea{
   width: 80vw;
 }
 
-/* ///////////GALERIA////////////// */
-.galeria{
-  
-  
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(4,1fr);
-  
-}
-.fotos__caja img {
-  width: 40vw;
-    
- 
-}
+
+
 /* //////CONTACTO////// */
-.formulario__form{
-  flex-direction: column;
-}
+
 .formulario{
   height: 120vh;
+}
+.mediosdepago{
+  flex-direction: column;
+}
+.mediosdepago__container{
+  height: 150%;
 }
 /* //////ABOUT US///// */
 .sobrenos__caja{
@@ -803,9 +824,6 @@ textarea{
   margin-bottom: 1rem;
 }
 
-
-
-
 }
 
 
@@ -813,7 +831,7 @@ textarea{
 
   footer{
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
    
   }
   .nav__footer a{
@@ -821,10 +839,7 @@ textarea{
     font-size: 1rem;      
     
   }
-  .footer1{
-    flex-basis: content;
   
-  }
   
 .footer2{
   flex-direction: column;
@@ -866,84 +881,43 @@ textarea{
   
   
   }
-  .container__ubicacion{
+   .container__ubicacion{
     flex-direction: column;
     align-items: center;
-  }
-  .tit__ubicacion-span{
-    width: 100vw;
-    padding: 1rem;   
-    
-  }
+    margin-bottom: .5rem;
+  } 
+  
 
 .tit-ubicacion p{
   display: none;
+  
+}
+.tit-ubicacion {
+  width: 60vw;
+  padding: .5rem;
 }
   .ubicacion {
-    width:100%;
+    width:90vw;
+    margin-bottom: 1rem;  
     
     
  }
+ /*/////// clases ////////*/
 
- /*///////GALERIA//////// */
- .galeria{
-  
-  
-  grid-template-columns: repeat(1,1fr);
-  grid-template-rows: repeat(5,1fr);
-  
+
+.cardclases-mod{
+
+margin: 1rem;
+
+
 }
-.fotos__caja img {
-  width: 90vw;
-    
+
  
-}
-
-/* //////CONTACTO////// */
-
-.formulario{
-  height: 132vh;
-}
- 
-/* //////ABOUT US/////// */
-
 
 .valores, .vision{
-  width: 80vw;
- 
- 
-
-
-
-
-
-
-
-
+  width: 70vw;
 
 }
-
-  
-
-
-  
-
- 
-
- 
-
- 
-
-
-
-
-
-
-
-
-
-
-
 
 
   }
