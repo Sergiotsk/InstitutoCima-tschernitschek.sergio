@@ -46,7 +46,9 @@ ul a:hover{
   transition: 0.5s;
 }
 main{
-  grid-column: 1/ span 3;  
+  grid-column: 1/ span 3; 
+ 
+
   
 
   }
@@ -247,12 +249,14 @@ footer {
   .juegos-titulo{
     text-align: center;
     padding: 1rem;
+    background:rgba(102, 102, 102, 0.616) ;
+    color: #fff;
   }
 
   .principal__opiniones-titulo{
     display: flex;
     justify-content: center;
-    background:rgba(102, 102, 102, 0.411) ;
+    background:rgba(102, 102, 102, 0.616) ;
   }
   .principal__opiniones-titulo i{
     font-size: 3rem;
@@ -263,8 +267,6 @@ footer {
   .principal__opiniones h3{
     text-align: center;
     font-size: 2rem;
-    color: rgb(26, 81, 133);
-    text-decoration:underline  ;
     padding: 1rem;
   }
  .principal__opiniones .caja-contenedor .caja{
@@ -331,6 +333,7 @@ height: 30vh;
  }
 .ubicacion {
  width: 70vw;
+ grid-column: 2 /span 3; 
 
 }
 .ubicacion iframe {
@@ -471,10 +474,10 @@ align-items: center;
 .formulario{
   display: flex;
   justify-content: center;   
- padding: 1rem;
+  padding: 1rem;
   height: 100%;
   color: rgb(255, 255, 255);
-  font-weight: 100;
+  
   
 }
 .formulario__form{
@@ -497,7 +500,7 @@ background-size: cover;
 }
 .mediosdepago__container{
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   background-color: #195c9b;
   margin-bottom: .5rem;
   
@@ -518,6 +521,7 @@ background-size: cover;
 }
 .mercadopago img{
   width: 15rem;
+  margin-top: 1.5rem;
 }
 .mercadopago{
   display: flex;
@@ -543,6 +547,8 @@ background-size: cover;
 }
 .fechasdepago{
   text-align: center;
+  padding: .5rem;
+  font-size: .8rem;
 }
 
 /* ///////ABOUT US/////// */
@@ -552,22 +558,28 @@ background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
   
 }
 .sobrenos__caja{
   display: flex;
   align-items: center;
-  justify-content: space-around;
-
-  margin: 1rem;
+  justify-content: space-around; 
   padding: .9rem;
-  background-color: #d37904;
+  /* background-color: #d37904; */
   box-shadow: .2rem .2rem .3rem;
   border-radius: .2rem  ;
 
 }
 .sobrenos__1{
   flex-direction: column;
+  background-color: #91a6b488;
+}
+.sobrenos__2{
+  background-color: #09b9ee57;
+}
+.sobrenos__3{
+  background-color: #91a6b488;
 }
 .sobrenos__caja img{
   border-radius: 50%;
@@ -713,7 +725,7 @@ background-size: cover;
   }
 
   .tit-ubicacion span {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
     color: #1D3557;
@@ -757,6 +769,7 @@ background-size: cover;
 
 
 
+
 /* /////////////// */
 
 
@@ -780,21 +793,11 @@ background-size: cover;
 }
 
 /* ///////////GALERIA////////////// */
-.galeria{
-  
-  
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(4,1fr);
-  
-}
-.fotos__caja img {
-  width: 40vw;  
- 
-}
+
 /* //////CONTACTO////// */
 
 .formulario{
-  height: 150vh;
+  height: 120vh;
 }
 .mediosdepago{
   flex-direction: column;
@@ -832,10 +835,7 @@ background-size: cover;
     font-size: 1rem;      
     
   }
-  .footer1{
-    flex-basis: content;
   
-  }
   
 .footer2{
   flex-direction: column;
@@ -877,25 +877,28 @@ background-size: cover;
   
   
   }
-  .container__ubicacion{
+   .container__ubicacion{
     flex-direction: column;
     align-items: center;
-  }
-  .tit__ubicacion-span{
-    width: 100vw;
-    padding: 1rem;   
-    
-  }
+    margin-bottom: .5rem;
+  } 
+  
 
 .tit-ubicacion p{
   display: none;
+  
+}
+.tit-ubicacion {
+  width: 60vw;
+  padding: .5rem;
 }
   .ubicacion {
-    width:100%;
+    width:90vw;
+    margin-bottom: 1rem;  
     
     
  }
- /* clases */
+ /*/////// clases ////////*/
 
 
 .cardclases-mod{
@@ -916,17 +919,7 @@ margin: 1rem;
 
 
 .valores, .vision{
-  width: 80vw;
- 
- 
-
-
-
-
-
-
-
-
+  width: 70vw;
 
 }
 
