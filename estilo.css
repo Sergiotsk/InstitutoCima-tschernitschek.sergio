@@ -74,8 +74,7 @@ footer {
   display: flex;
   flex-direction: column;
   height: 100%;
-  align-items: center;
-  
+  align-items: center;  
   background: radial-gradient(circle, rgb(5, 115, 248), rgb(3, 50, 136));
   grid-column: 1/ span 3;
   padding: 0 2rem;
@@ -498,14 +497,53 @@ background-size: cover;
 }
 .mediosdepago__container{
   width: 100%;
-  height: 40vh;
-  background-color: #197d9b;
+  height: 80vh;
+  background-color: #195c9b;
+  margin-bottom: .5rem;
+  
+  
 }
-.iconospago img{
+.transferencia img{
   width: 5rem;
+  
+}
+.transferencia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+.cbu{
+  padding: 1rem;
+}
+.mercadopago img{
+  width: 15rem;
+}
+.mercadopago{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
 }
 
-
+.mediosdepago{
+  display: flex;
+  justify-content: space-evenly;
+}
+.cbu li{
+  list-style: none;  
+  font-size: .8rem;
+}
+.cvu li{
+  list-style: none;
+  font-size: .8rem;
+}
+.cvu{
+  padding: 1rem;
+}
+.fechasdepago{
+  text-align: center;
+}
 
 /* ///////ABOUT US/////// */
 
@@ -754,11 +792,15 @@ background-size: cover;
  
 }
 /* //////CONTACTO////// */
-.formulario__form{
+
+.formulario{
+  height: 150vh;
+}
+.mediosdepago{
   flex-direction: column;
 }
-.formulario{
-  height: 70vh;
+.mediosdepago__container{
+  height: 150%;
 }
 /* //////ABOUT US///// */
 .sobrenos__caja{
@@ -782,7 +824,7 @@ background-size: cover;
 
   footer{
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
    
   }
   .nav__footer a{
@@ -868,9 +910,7 @@ margin: 1rem;
 
 /* //////CONTACTO////// */
 
-.formulario{
-  height: 100vh;
-}
+
  
 /* //////ABOUT US/////// */
 
