@@ -138,7 +138,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 1rem;
+ 
 }
   .promo{
     border-radius: 0.2rem;
@@ -176,9 +176,7 @@ footer {
     text-align: center;
     padding: 1rem;
   }
-  .principal__nov p{
-    margin: 1rem;
-  }
+ 
   .principal__nov-cars{
     display: flex;
     flex-direction: row;
@@ -218,7 +216,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 1.5rem;
+   
   }
   .wordwall{
     display: flex;
@@ -226,10 +224,7 @@ footer {
     justify-content: space-around;
    
   }
-  .wordwall div{
-    width: 40vw;    
-    margin: 1.5rem;
-  }
+  
   .wordwall iframe{
     width: 100%;
     border-radius: .5rem;
@@ -246,9 +241,11 @@ footer {
   }
   .juegos-titulo{
     text-align: center;
-    padding: 1rem;
+    
     background:rgba(102, 102, 102, 0.616) ;
     color: #fff;
+    width: 90vw;
+    margin: 0 auto;
   }
 
   .principal__opiniones-titulo{
@@ -412,7 +409,8 @@ nav li {
   font-size: 5vw;
   text-shadow:0.1rem 0.1rem 0.1rem #000;
   width: 90vw;
-  padding: 2rem;
+  padding: .8rem;
+ 
   }
 .clases__banner p {
   color: #fff;
@@ -671,6 +669,12 @@ background-size: cover;
     transition: .4s;
 
   }
+  .examenes .promo{
+    width: 95vw;
+  }
+  .promo{
+    width: 100%;
+  }
 
   nav li {
     display: block;
@@ -699,7 +703,7 @@ background-size: cover;
   }
   .wordwall div{
     width: 90vw;     
-    margin: 1.5rem;
+    
   }
   .tit-ubicacion p {
     font-size: 1rem;    
@@ -722,7 +726,10 @@ background-size: cover;
    height: 29rem;
   
  }
- 
+ .principal__nov-1, .principal__nov-2, .principal__nov-3{
+  width: 95vw;
+  height: 90vh;
+}
 .principal__nov-cars{
   flex-direction: column;
   align-items: center; 
@@ -736,7 +743,7 @@ background-size: cover;
 /* /////////CLASES/////////// */
 
 .clases__banner h1{
-  margin: 2rem;
+
   font-size: 1.7rem;
 }
 .clases__banner--text p{
@@ -821,8 +828,13 @@ background-size: cover;
   
 }
 .banner{
-  height: 50vh;
+  height: 45vh;
 }
+.principal__nov-1, .principal__nov-2, .principal__nov-3{
+  width: 95vw;
+  height: 30vh;
+}
+
   .principal__videoyt iframe{
     width: 90vw;
     height: 50vh;
@@ -860,7 +872,10 @@ background-size: cover;
  }
  /*/////// clases ////////*/
 
-
+.clases__banner p{
+  margin: 0 auto;
+  width: 80vw;
+}
 .cardclases-mod{
 
 margin: 1rem;
