@@ -240,8 +240,7 @@ footer {
    margin: 1rem; 
   }
   .juegos-titulo{
-    text-align: center;
-    
+    text-align: center;    
     background:rgba(102, 102, 102, 0.616) ;
     color: #fff;
     width: 90vw;
@@ -856,20 +855,7 @@ background-size: cover;
   } 
   
 
-.tit-ubicacion p{
-  display: none;
-  
-}
-.tit-ubicacion {
-  width: 60vw;
-  padding: .5rem;
-}
-  .ubicacion {
-    width:90vw;
-    margin-bottom: 1rem;  
-    
-    
- }
+
  /*/////// clases ////////*/
 
 .clases__banner p{
@@ -898,3 +884,25 @@ margin: 1rem;
 }
 
   }
+  .tit-ubicacion p{
+    display: none;
+    
+  }
+  .tit-ubicacion {
+    width: 60vw;
+    padding: .5rem;
+  }
+  .container__ubicacion{
+    height: 50vh;
+    width: 90vw;
+    
+  }
+    .ubicacion {
+      width:98%;
+      height: 98%;
+     
+      
+   }
+   .redes{
+     margin-bottom: 1rem;
+   }
