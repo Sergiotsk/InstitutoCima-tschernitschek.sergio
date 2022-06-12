@@ -291,8 +291,9 @@ background-size: cover;
     width: 100%;
   }
 
-  nav li {
-    display: block;
+  nav ul {
+    display: flex;
+    flex-direction: column;
     padding: .7rem;
   }
 .principal__opiniones-titulo h3{
@@ -300,8 +301,8 @@ background-size: cover;
 }
   .esconder-menu {
     position: absolute;
-    top: 45px;
-    right: 45px;
+    top: .2rem;
+    right: 1rem;
   }
 
   #check:checked~.menu {
@@ -418,6 +419,7 @@ background-size: cover;
     font-size: 1rem;      
     
   }
+ 
   
   
 .footer2{
@@ -425,9 +427,12 @@ background-size: cover;
    height: 100%;
    align-items: center;
    justify-content: space-between;
-   margin: 1.5rem;
+   margin: 1.6rem;
  
   
+}
+.footer2 .logo img{
+  width: 8rem;
 }
 
 
