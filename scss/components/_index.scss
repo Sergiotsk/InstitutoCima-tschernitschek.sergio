@@ -4,7 +4,7 @@
   align-items: center;
   grid-column: 1/span 3;
   grid-row: 2/span 1;
-  height: 40vw;
+  height: 40vh;
   width: 100%;
   background: $glass, url(../assets/img/banerinicio.jpg);
   background-repeat: no-repeat;
@@ -53,6 +53,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  img{
+    height: 20vh;
+    width: 100vw;
+  }
 
   .promo {
     border-radius: 0.2rem;
@@ -81,9 +85,8 @@
   }
 
 }
-
-
 .principal__nov {
+
   h2 {
     text-align: center;
     padding: 1rem;
@@ -230,9 +233,6 @@ img{
   margin-top: 2rem;
 }
 }
-
-
-
 .caja .users {  
 
 h4{
@@ -307,12 +307,6 @@ p {
   color: rgb(2, 45, 75);
 }
 }
-
-
-
-
-
-
 .redes {   
   display: flex;
   flex-direction: column;
@@ -343,7 +337,6 @@ img {
 }
 }
 }
-
 
 .logo img {
   width: 5rem;

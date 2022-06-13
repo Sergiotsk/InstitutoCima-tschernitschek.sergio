@@ -5,7 +5,6 @@
 }
 
 body {
-  background-image: url(../assets/img/fondo.jpg);
   background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
@@ -66,20 +65,11 @@ footer {
   height: 20vh;
   margin: 0.5rem;
 }
-
-.footer2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  margin: 3rem;
-}
-
-.nav__footer {
+.footer1 .nav__footer {
   align-self: flex-start;
   margin: 0 auto;
 }
-.nav__footer a {
+.footer1 .nav__footer a {
   color: #fff;
   font-size: 0.8rem;
   padding: 0.2rem;
@@ -88,8 +78,46 @@ footer {
   border-radius: 0.5rem;
   text-shadow: 1px 3px 10px #000;
 }
-.nav__footer a:hover {
+.footer1 .nav__footer a:hover {
   color: #fa7901;
+}
+.footer1 nav li {
+  display: inline-block;
+}
+
+.footer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 3rem;
+}
+.footer2 .redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+.footer2 .redes img {
+  align-items: flex-start;
+  height: 2.3rem;
+  margin: 0.5rem;
+}
+.footer2 .redes img span {
+  color: #fff;
+  margin-top: 0;
+  font-size: 1.2em;
+}
+.footer2 .redes img .dire {
+  color: #fff;
+  font-size: 1rem;
+  margin: 1rem;
+  width: 10rem;
+  text-align: center;
+}
+.footer2 .logo img {
+  width: 5rem;
 }
 
 .active {
@@ -102,7 +130,7 @@ footer {
   align-items: center;
   grid-column: 1/span 3;
   grid-row: 2/span 1;
-  height: 40vw;
+  height: 40vh;
   width: 100%;
   background: linear-gradient(rgba(57, 124, 163, 0.514), rgba(39, 64, 207, 0.438)), url(../assets/img/banerinicio.jpg);
   background-repeat: no-repeat;
@@ -139,40 +167,36 @@ footer {
   margin-left: 10vw;
 }
 
-/*//////////////////////////////HOME///////////////////////////////////////////*/
 .examenes {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-.promo {
+.examenes img {
+  height: 20vh;
+  width: 100vw;
+}
+.examenes .promo {
   border-radius: 0.2rem;
   box-shadow: 0.2rem 0.2rem 0.3rem;
+  width: 15rem;
+  height: 8rem;
+  background-color: #09b8ee;
 }
-
-.promo1 {
+.examenes .promo1 {
   background: url(../assets/img/promo1.jpg);
   background-position: center;
   background-size: cover;
 }
-
-.promo2 {
+.examenes .promo2 {
   background: url(../assets/img/promo2.jpg);
   background-position: center;
   background-size: cover;
 }
-
-.promo3 {
+.examenes .promo3 {
   background: url(../assets/img/promo3.jpg);
   background-position: center;
   background-size: cover;
-}
-
-.examenes .promo {
-  width: 15rem;
-  height: 8rem;
-  background-color: #09b8ee;
 }
 
 .principal__nov h2 {
@@ -186,7 +210,8 @@ footer {
   justify-content: space-around;
 }
 
-.principal__nov-1, .principal__nov-2,
+.principal__nov-1,
+.principal__nov-2,
 .principal__nov-3 {
   width: 15rem;
   height: 8rem;
@@ -336,7 +361,6 @@ footer {
   text-transform: uppercase;
   color: rgb(2, 45, 75);
 }
-
 .tit-ubicacion p {
   font-size: 1rem;
   margin: 0.5rem;
@@ -351,20 +375,17 @@ footer {
   justify-content: center;
   height: 10rem;
 }
-
-.redes a img {
+.redes img {
   align-items: flex-start;
   height: 2.3rem;
   margin: 0.5rem;
 }
-
-.redes span {
+.redes img span {
   color: #fff;
   margin-top: 0;
   font-size: 1.2em;
 }
-
-.dire {
+.redes img .dire {
   color: #fff;
   font-size: 1rem;
   margin: 1rem;
@@ -380,6 +401,7 @@ nav li {
   display: inline-block;
 }
 
+/*//////////////////////////////HOME///////////////////////////////////////////*/
 /*///////////CLASES//////////// */
 .clases__banner {
   height: 60vh;
@@ -764,14 +786,11 @@ nav li {
   .principal {
     height: 100%;
   }
-  .banner h2 {
-    color: #fff;
-    font-size: 4.5vw;
-    width: 90%;
-    text-align: center;
-  }
   .banner {
-    height: 45vh;
+    height: 15vh;
+  }
+  .banner span {
+    margin-top: 0.5rem;
   }
   .principal__nov-1, .principal__nov-2, .principal__nov-3 {
     width: 95vw;
@@ -832,4 +851,4 @@ nav li {
   margin-bottom: 1rem;
 }
 
-
+/*# sourceMappingURL=style.css.map */
