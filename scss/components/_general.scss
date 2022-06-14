@@ -42,7 +42,7 @@ header {
             text-shadow: 1px 3px 10px #000;
 
             &:hover {
-                color: $naranja;
+                color: $secundario;
                 text-shadow: 1px 3px 10px #000;
                 transition: 0.5s;
             }
@@ -96,7 +96,7 @@ main {
           transition: 0.5s;
           border-radius: 0.5rem;
           text-shadow: 1px 3px 10px #000;
-          &:hover{color:$naranja}
+          &:hover{color:$primario}
       }
      
     }

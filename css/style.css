@@ -40,7 +40,7 @@ header .menu a {
   text-shadow: 1px 3px 10px #000;
 }
 header .menu a:hover {
-  color: #fa7901;
+  color: #ddab34;
   text-shadow: 1px 3px 10px #000;
   transition: 0.5s;
 }
@@ -79,7 +79,7 @@ footer {
   text-shadow: 1px 3px 10px #000;
 }
 .footer1 .nav__footer a:hover {
-  color: #fa7901;
+  color: #2153aa;
 }
 .footer1 nav li {
   display: inline-block;
@@ -144,15 +144,11 @@ footer {
   width: 90vw;
   margin: 2vw;
 }
-.banner h2 {
-  color: #fff;
-  font-size: 2.1vw;
-  width: 80%;
-  text-align: left;
-  padding: 1vw;
-  margin-bottom: 2vw;
-  text-transform: uppercase;
-  text-shadow: 0.1rem 0.1rem 0.1rem #000;
+
+h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  padding: 1rem;
 }
 
 .banner__text {
@@ -161,7 +157,7 @@ footer {
 .banner__text span {
   color: #003459;
   display: inline-block;
-  background-color: #FFB703;
+  background-color: #ddab34;
   font-size: 4vw;
   width: 57vw;
   margin-left: 10vw;
@@ -453,7 +449,7 @@ nav li {
 }
 
 .btn-mod {
-  background: radial-gradient(circle, rgb(5, 115, 248), rgb(3, 50, 136));
+  background-color: #2153aa;
 }
 
 /* //////////Galeria/////////// */
