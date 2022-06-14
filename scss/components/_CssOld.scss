@@ -234,9 +234,7 @@ background-size: cover;
   transition: 4s;
 
 }
-.banner__text h2{
-  transition: 2s;
-}
+
 .banner__text span{
 
   transition: ease-out;
@@ -251,7 +249,7 @@ background-size: cover;
 .esconder-menu {
   cursor: pointer;
   display: none;
-  color: #fa7901;
+  color: $secundario;
   transition: .4s;
 } 
 #check {
@@ -284,12 +282,8 @@ background-size: cover;
     transition: .4s;
 
   }
-  .examenes .promo{
-    width: 95vw;
-  }
-  .promo{
-    width: 100%;
-  }
+ 
+ 
 
   nav ul {
     display: flex;
@@ -309,11 +303,7 @@ background-size: cover;
     right: 0;
   }
 
-  .banner h2 {
-    color: #fff;
-    font-size: 2.8vw;
-    width: 80%; 
-  }
+  
   .wordwall{
     flex-direction: column;       
   }
@@ -340,8 +330,14 @@ background-size: cover;
 
   .examenes{
    flex-direction: column;
-   height: 29rem;
   
+ }
+ .examenes h2{
+   font-size: 2rem;
+   padding: .5rem;
+ }
+ .examenes img{
+   width: 20rem;
  }
  .principal__nov-1, .principal__nov-2, .principal__nov-3{
   width: 95vw;
@@ -450,6 +446,23 @@ background-size: cover;
     margin-top: .5rem;
   }
 }
+.examenes{
+  width:85vw;
+  margin: .5rem;
+ 
+}
+.examenes p{
+  font-size: 1rem;
+  padding: .5rem;
+  width: 100%;
+  margin-top: .1rem;
+  text-align: left;
+  
+  
+}
+.examenes img{
+  width: 7rem;
+}
 .principal__nov-1, .principal__nov-2, .principal__nov-3{
   width: 95vw;
   height: 30vh;
@@ -505,25 +518,9 @@ margin: 1rem;
 }
 
   }
-  .tit-ubicacion p{
-    display: none;
+ 
+ 
     
-  }
-  .tit-ubicacion {
-    width: 60vw;
-    padding: .5rem;
-  }
-  .container__ubicacion{
-    height: 50vh;
-    width: 90vw;
-    
-  }
-    .ubicacion {
-      width:98%;
-      height: 98%;
-     
-      
-   }
    .redes{
      margin-bottom: 1rem;
    }

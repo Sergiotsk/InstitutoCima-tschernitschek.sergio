@@ -1,0 +1,36 @@
+
+
+
+.container__ubicacion{
+  padding: 1rem;
+  
+  
+   
+    
+   
+   
+      
+    
+     }
+    .ubicacion {
+      height: 50vh;
+    
+     background-color: #a8dadca8;
+     grid-column: 1 /span 3; 
+     
+     iframe {
+       width: 100%;
+       height: 100%;
+      
+      
+   }
+    
+    } 
+ 
+    .tit-ubicacion h2{     
+    text-align: center;
+    color: $azuloscuro;
+    padding: 3rem;
+    }
+    
+    
