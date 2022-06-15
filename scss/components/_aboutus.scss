@@ -1,0 +1,70 @@
+
+.sobrenos{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    
+  }
+  
+  .sobrenos__caja{
+    @extend %displayf-row;
+    padding: .9rem;
+    box-shadow: .2rem .2rem .3rem;
+    border-radius: .2rem  ;
+  
+  }
+  .sobrenos__1{
+    flex-direction: column;
+    background-color: #91a6b488;
+  }
+  
+  .sobrenos__2{
+    background-color: #09b9ee57;
+  }
+  
+  .sobrenos__3{
+    background-color: #91a6b488;
+  }
+  
+  .sobrenos__caja img{
+    border-radius: 50%;
+  }
+  
+  .sobrenos__caja p{
+    margin: .5rem;
+    padding: .5rem;
+  }
+  
+  .sobrenos__4{
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+   margin: 1rem;
+  }
+  
+  .card-mod{
+    background-color: #0a8fee;
+    padding: 1.5rem;
+  }
+  .titulos h5{
+    text-align: center;
+    padding: .5rem;
+    margin: .5rem;
+  }
+  .sobrenos__caja h1{
+    padding: .5rem  ;
+    
+  }
+  /* /////RAMA ANIMACIONES///// */
+  
+  .banner h1{
+    transition: 4s;
+  
+  }
+  
+  .banner__text span{
+  
+    transition: ease-out;
+  }

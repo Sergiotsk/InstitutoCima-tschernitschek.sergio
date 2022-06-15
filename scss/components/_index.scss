@@ -7,9 +7,7 @@
   height: 40vh;
   width: 100%;
   background: $glass, url(../assets/img/banerinicio.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @include imagenfondo();
 
   h1 {
     color: $blanco;
@@ -46,13 +44,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 5rem;
+  margin: 1rem;
     p{
     color: $azuloscuro;
     text-align: center;
-    font-size: 2.2rem;
+    font-size: map-get($parrafos , fzxl );
     margin-top: 2rem; 
-    width: 70vw;
+    
   }
   
 
@@ -62,23 +60,35 @@
 .teacher{
   width: 10rem;
 }
-.linea{
-  width: 70vw;
-  height: .1rem;
-}
+
 
 .principal__nov {
-  h2 {
-    text-align: center;
-    color: $azuloscuro;
-    font-size: 3rem;
-    padding: 1rem;
+  h2,h3 {
+    text-align: map-get($titulos , alineacioncentro );    
+    color: map-get($titulos ,  color2 );
+    font-size: map-get($titulos , fzlarge );
+    padding: 2rem;
 
+
+  }
+  p{
+    text-align: map-get($parrafos , alineacioniz );    
+    color: map-get($parrafos ,  color2 );
+    font-size: map-get($parrafos , fzxl );
+    padding: .5rem;
+   
+   
+  
+ 
   }
 
 
 
   
+}
+.carru-mod{
+  margin: 0 auto;
+  width: 70vw;
 }
 
 .principal__videoyt{
@@ -100,11 +110,9 @@ iframe{
 }
 }
 
-.wordwall{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.wordwall{  
   width: 90vw;
+  @extend %displayf-row
  
 }
 
@@ -123,10 +131,13 @@ iframe{
  
   
   h2{
-    font-size: 3rem;
-    padding: 3rem;
+    text-align: map-get($titulos , alineacioncentro );    
+    color: map-get($titulos ,  color2 );
+    font-size: map-get($titulos , fzlarge );
+    padding: 2rem;
 
   }
+ 
 }
 
 

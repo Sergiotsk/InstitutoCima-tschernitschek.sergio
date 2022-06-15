@@ -1,0 +1,102 @@
+
+.clases__banner {
+  height: 60vh;
+  background: linear-gradient( rgba(57, 124, 163, 0.63),rgba(39, 64, 207, 0.438)),url(../assets/img/clasesbaner.jpg);
+  @include imagenfondo();
+ 
+  h1 {
+    color: #fff;
+    font-size: 5vw;
+    text-shadow:0.1rem 0.1rem 0.1rem #000;
+    width: 90vw;
+    padding: 2rem;
+    
+   
+    }
+    p {
+        color: #fff;
+        font-size: 2.1vw;
+        width: 90%;
+        text-align: left;
+        padding: 1rem;
+        margin: 2rem;
+        text-transform: uppercase;
+        text-shadow:0.1rem 0.1rem 0.1rem #000; 
+
+        button{
+          background-color: $primario;
+          border-radius: .5rem;
+          border: none;
+          padding-bottom: .3rem;
+          &:hover{
+            background-color:darken($color: $primario, $amount: 20);
+            transition: .8s;
+          }
+          a{
+            text-decoration: none;
+            font-size: 1.2rem;
+           
+            color: $blanco;
+          }
+        }
+      }
+}
+
+
+.clases__banner__text{
+
+    width: 70vw;
+
+    
+  }
+ 
+  
+.clases{
+    @extend %displayf-row;   
+    flex-wrap: wrap;
+    margin: 2rem; 
+    
+  }
+  .card-body-mod{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  
+  }
+ 
+  .cardclases-mod{
+    box-shadow: .1rem .3rem 1rem #000;
+   
+
+    a{
+  
+        background-color: $primario;
+      
+      }
+  }
+ .cursos{
+   h2{
+     
+    text-align: map-get($titulos , alineacioncentro );    
+    color: map-get($titulos ,  color2 );
+    font-size: map-get($titulos , fzlarge );
+    padding: 2rem;
+
+
+   }
+   p{
+    text-align: map-get($parrafos , alineacioniz );    
+    color: map-get($parrafos ,  color2 );
+    font-size: map-get($parrafos , fzxl );
+    padding: .5rem;
+
+
+
+
+   }
+   
+  
+ }
+  

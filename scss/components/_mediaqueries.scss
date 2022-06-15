@@ -1,0 +1,272 @@
+
+@media (max-width: 768px) {
+
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+    font-size: 45px;
+
+  }
+  footer{
+    height: 70vh;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vw;
+    background: radial-gradient(circle, rgb(5, 115, 248), rgb(3, 50, 136));
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 5rem 0;
+    z-index: 100;
+    transition: .4s;
+
+  }
+ 
+ 
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: .7rem;
+  }
+.principal__opiniones-titulo h3{
+  font-size: 1.5rem;
+}
+  .esconder-menu {
+    position: absolute;
+    top: .2rem;
+    right: 1rem;
+  }
+
+  #check:checked~.menu {
+    right: 0;
+  }
+
+  
+  .wordwall{
+    flex-direction: column;       
+  }
+  .wordwall iframe{
+    width: 90vw;  
+    height: 70vh;   
+    
+  }
+  .tit-ubicacion p {
+    font-size: 1rem;    
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(2, 45, 75);
+   
+  }
+
+  .tit-ubicacion span {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D3557;
+    width: 100%;
+  }
+
+  .examenes{
+   flex-direction: column;
+  
+ }
+ .examenes h2{
+   font-size: 2rem;
+   padding: .5rem;
+ }
+ .examenes img{
+   width: 20rem;
+ }
+ .principal__nov-1, .principal__nov-2, .principal__nov-3{
+  width: 95vw;
+  height: 90vh;
+}
+.principal__nov-cars{
+  flex-direction: column;
+  align-items: center; 
+}
+.persona img{
+  width:15vw;
+}
+/*//// animaciones /////*/
+
+
+/* /////////CLASES/////////// */
+
+.clases__banner h1{
+
+  font-size: 1.7rem;
+}
+.clases__banner--text p{
+  width: 70%;
+  font-size: 1.2rem;
+}
+
+.clases__art img{
+
+  width: 80vw;
+}
+.clases__art--text{
+  width: 80vw;
+}
+
+
+
+/* //////CONTACTO////// */
+
+.formulario{
+  height: 130vh;
+}
+.mediosdepago{
+  flex-direction: column;
+}
+.mediosdepago__container{
+  height: 150%;
+}
+/* //////ABOUT US///// */
+.sobrenos__caja{
+  flex-direction: column;  
+}
+.sobrenos__4{
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+.valores, .vision{
+  width: 80vw;
+  margin-bottom: 1rem;
+}
+
+}
+
+
+@media (max-width: 480px){
+  .examenes{
+    p{
+      font-size: map-get($parrafos , fzsmall );
+    }
+  }
+
+  footer{
+    flex-direction: column;
+    height: 90vh;
+   
+  }
+  .nav__footer a{
+    
+    font-size: 1rem;      
+    
+  }
+ 
+  
+  
+.footer2{
+  flex-direction: column;
+   height: 100%;
+   align-items: center;
+   justify-content: space-between;
+   margin: 1.6rem;
+ 
+  
+}
+.footer2 .logo img{
+  width: 8rem;
+}
+
+
+/* ///////////HOME///////////// */
+
+.principal{
+  height: 100%;
+}
+
+  
+
+.banner{
+  height: 15vh;
+  span{
+    margin-top: .5rem;
+  }
+}
+.examenes{
+  width:85vw;
+  margin: .5rem;
+ 
+}
+.examenes p{
+  font-size: 1rem;
+  padding: .5rem;
+  width: 100%;
+  margin-top: .1rem;
+  text-align: left;
+  
+  
+}
+.examenes img{
+  width: 7rem;
+}
+.principal__nov-1, .principal__nov-2, .principal__nov-3{
+  width: 95vw;
+  height: 30vh;
+}
+
+  .principal__videoyt iframe{
+    width: 90vw;
+    height: 50vh;
+  }
+  .principal__opiniones-titulo i{
+    display: none;
+  }
+  .caja .fa-user{  
+   
+    right: 1rem;
+    font-size: 3rem;  
+  
+  
+  }
+   .container__ubicacion{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: .5rem;
+  } 
+  
+
+
+ /*/////// clases ////////*/
+
+.clases__banner p{
+  margin: 0 auto;
+  width: 80vw;
+}
+.cardclases-mod{
+
+margin: 1rem;
+
+
+}
+
+ 
+
+.valores, .vision{
+  width: 70vw;
+
+}
+/* ////contacto//// */
+
+.formulario__form form{
+  margin: .5rem;
+
+  
+}
+
+  }
+ 
+ 
+    
+   .redes{
+     margin-bottom: 1rem;
+   }
