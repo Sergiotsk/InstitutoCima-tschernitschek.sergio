@@ -1,7 +1,7 @@
 
 .clases__banner {
   height: 60vh;
-  background: linear-gradient( rgba(57, 124, 163, 0.63),rgba(39, 64, 207, 0.438)),url(../assets/img/clasesbaner.jpg);
+  background: linear-gradient( rgba(57, 124, 163, 0.63),rgba(39, 64, 207, 0.438)),url(../assets/img/clasesbaner1.jpg);
   @include imagenfondo();
  
   h1 {
@@ -67,12 +67,12 @@
   }
  
   .cardclases-mod{
-    box-shadow: .1rem .3rem 1rem #000;
-   
+    box-shadow: .1rem .3rem 1rem #000; 
+    margin-bottom: 1.5rem; 
 
     a{
   
-        background-color: $primario;
+        background-color: darken($color: $primario, $amount: 10);
       
       }
   }
@@ -100,3 +100,4 @@
   
  }
   
+ 

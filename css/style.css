@@ -273,18 +273,11 @@ footer {
 
 .wordwall-caja iframe {
   width: 41vw;
-  height: 39vh;
+  height: 45vh;
 }
 
 .wordwall {
   width: 90vw;
-}
-
-.principal__videoyt-span {
-  width: 30rem;
-  height: 20rem;
-  background-color: #09b8ee;
-  margin: 1rem;
 }
 
 .juegos-titulo {
@@ -349,7 +342,7 @@ footer {
 
 .caja .users h4 {
   color: #003459;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .caja .stars i {
@@ -399,7 +392,7 @@ nav li {
 
 .clases__banner {
   height: 60vh;
-  background: linear-gradient(rgba(57, 124, 163, 0.63), rgba(39, 64, 207, 0.438)), url(../assets/img/clasesbaner.jpg);
+  background: linear-gradient(rgba(57, 124, 163, 0.63), rgba(39, 64, 207, 0.438)), url(../assets/img/clasesbaner1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -454,9 +447,10 @@ nav li {
 
 .cardclases-mod {
   box-shadow: 0.1rem 0.3rem 1rem #000;
+  margin-bottom: 1.5rem;
 }
 .cardclases-mod a {
-  background-color: #2153aa;
+  background-color: #193e7f;
 }
 
 .cursos h2 {
@@ -569,10 +563,20 @@ nav li {
   height: 100%;
 }
 
+.tit-ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
 .tit-ubicacion h2 {
-  text-align: center;
   color: #003459;
-  padding: 3rem;
+  padding: 0.5rem;
+}
+.tit-ubicacion img {
+  width: 3rem;
+  height: 3rem;
+  padding-bottom: 0.3rem;
 }
 
 .sobrenos {
@@ -586,6 +590,7 @@ nav li {
   padding: 0.9rem;
   box-shadow: 0.2rem 0.2rem 0.3rem;
   border-radius: 0.2rem;
+  width: 100%;
 }
 
 .sobrenos__1 {
@@ -602,11 +607,17 @@ nav li {
 }
 
 .sobrenos__caja img {
-  border-radius: 50%;
+  width: 10rem;
 }
 
-.sobrenos__caja p {
+.sobrenos__caja {
   margin: 0.5rem;
+  padding: 1rem;
+}
+.sobrenos__caja p {
+  text-align: left;
+  color: #003459;
+  font-size: 1.2rem;
   padding: 0.5rem;
 }
 
@@ -618,27 +629,30 @@ nav li {
 }
 
 .card-mod {
-  background-color: #0a8fee;
+  background-color: rgba(10, 143, 238, 0.5058823529);
   padding: 1.5rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem;
+}
+.card-mod p {
+  text-align: center;
+  color: #003459;
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 .titulos h5 {
   text-align: center;
+  color: #003459;
+  font-size: 3rem;
   padding: 0.5rem;
   margin: 0.5rem;
 }
 
 .sobrenos__caja h1 {
+  text-align: center;
+  color: #003459;
+  font-size: 3rem;
   padding: 0.5rem;
-}
-
-/* /////RAMA ANIMACIONES///// */
-.banner h1 {
-  transition: 4s;
-}
-
-.banner__text span {
-  transition: ease-out;
 }
 
 @media (max-width: 768px) {
@@ -661,6 +675,9 @@ nav li {
     padding: 5rem 0;
     z-index: 100;
     transition: 0.4s;
+  }
+  .menu li {
+    padding: 0.8rem;
   }
   nav ul {
     display: flex;
@@ -708,7 +725,9 @@ nav li {
   .examenes img {
     width: 20rem;
   }
-  .principal__nov-1, .principal__nov-2, .principal__nov-3 {
+  .principal__nov-1,
+.principal__nov-2,
+.principal__nov-3 {
     width: 95vw;
     height: 90vh;
   }
@@ -722,22 +741,27 @@ nav li {
   /*//// animaciones /////*/
   /* /////////CLASES/////////// */
   .clases__banner h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    width: 95vw;
+    padding: 0.5rem;
+    margin: 0 auto;
   }
-  .clases__banner--text p {
-    width: 70%;
-    font-size: 1.2rem;
+  .clases__banner p {
+    font-size: 1rem;
+    padding: 1rem 0;
   }
-  .clases__art img {
-    width: 80vw;
+  .clases__banner button {
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
   }
-  .clases__art--text {
-    width: 80vw;
+  .cursos h2 {
+    font-size: 2rem;
+  }
+  .cursos p {
+    font-size: 1rem;
+    padding: 0.1rem;
   }
   /* //////CONTACTO////// */
-  .formulario {
-    height: 130vh;
-  }
   .mediosdepago {
     flex-direction: column;
   }
@@ -752,7 +776,8 @@ nav li {
     flex-direction: column;
     align-items: center;
   }
-  .valores, .vision {
+  .valores,
+.vision {
     width: 80vw;
     margin-bottom: 1rem;
   }
@@ -797,21 +822,27 @@ nav li {
     padding: 0.5rem;
     width: 100%;
     margin-top: 0.1rem;
-    text-align: left;
+    text-align: center;
   }
   .examenes img {
     width: 7rem;
   }
-  .principal__nov-1, .principal__nov-2, .principal__nov-3 {
-    width: 95vw;
-    height: 30vh;
+  .principal__nov h2,
+.principal__nov h3 {
+    font-size: 2rem;
+  }
+  .principal__nov p {
+    font-size: 1rem;
+  }
+  .juegos-titulo h2 {
+    font-size: 2rem;
   }
   .principal__videoyt iframe {
     width: 90vw;
     height: 50vh;
   }
-  .principal__opiniones-titulo i {
-    display: none;
+  .principal__opiniones h3 {
+    font-size: 2rem;
   }
   .caja .fa-user {
     right: 1rem;
@@ -830,7 +861,8 @@ nav li {
   .cardclases-mod {
     margin: 1rem;
   }
-  .valores, .vision {
+  .valores,
+.vision {
     width: 70vw;
   }
   /* ////contacto//// */
@@ -840,6 +872,18 @@ nav li {
 }
 .redes {
   margin-bottom: 1rem;
+}
+
+.card-mod {
+  background-color: rgba(10, 143, 238, 0.5058823529);
+  padding: 1.5rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem;
+}
+.card-mod p {
+  text-align: center;
+  color: #003459;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
