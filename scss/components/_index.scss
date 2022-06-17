@@ -42,21 +42,25 @@
 
 .examenes {
   display: flex;
-  justify-content: space-around;
+  justify-content:center;
   align-items: center;
   margin: 1rem;
     p{
     color: $azuloscuro;
     text-align: center;
     font-size: map-get($parrafos , fzxl );
-    margin-top: 2rem; 
+    font-family: map-get($parrafos , fm );
+    margin-top: 1.5rem;
+    padding: 1.5rem; 
+    width: 40rem;
     
   }
-  
+ 
 
   
 
 }
+
 .teacher{
   width: 10rem;
 }
@@ -71,8 +75,9 @@
 
 
   }
+  
   p{
-    text-align: map-get($parrafos , alineacioniz );    
+    text-align: map-get($parrafos , alineacioncentro );    
     color: map-get($parrafos ,  color2 );
     font-size: map-get($parrafos , fzxl );
     padding: .5rem;

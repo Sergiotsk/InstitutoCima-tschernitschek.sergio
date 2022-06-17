@@ -1,16 +1,22 @@
 
 
-.principal__contacto{
-  background-color:#56728b75; 
+.principal__contacto{ 
+  
+  background-color:rgba(85, 157, 175, 0.37);  
+  
  
 }
 
+
+
+ 
 .formulario{
   display: flex;
   justify-content: center;   
   padding: 1rem;
   height: 100%;
   color: $azuloscuro; 
+ 
   
 }
 

@@ -87,10 +87,11 @@
 
    }
    p{
-    text-align: map-get($parrafos , alineacioniz );    
+    text-align: map-get($parrafos , alineacioncentro );    
     color: map-get($parrafos ,  color2 );
     font-size: map-get($parrafos , fzxl );
-    padding: .5rem;
+    padding: 1rem;
+    margin: .5rem;
 
 
 
