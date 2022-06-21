@@ -1,90 +1,94 @@
+.principal__contacto {
+
+  background-color: rgba(85, 157, 175, 0.37);
 
 
-.principal__contacto{ 
-  
-  background-color:rgba(85, 157, 175, 0.37);  
-  
- 
 }
 
-
-
- 
-.formulario{
+.formulario {
   display: flex;
-  justify-content: center;   
+  justify-content: center;
   padding: 1rem;
   height: 100%;
-  color: $azuloscuro; 
- 
-  
-}
+  color: $azuloscuro;
 
-.formulario__form{
- display: flex;
- align-items: center;
- flex-direction: column;
- width: 100%;
- padding: 1rem;
 
 }
 
-.formulario__text img{
+.formulario__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+
+}
+
+.formulario__text img {
   width: 2rem;
   margin: .5rem;
 }
 
-.mediosdepago__container{
+.mediosdepago__container {
   width: 100%;
   height: 60vh;
- 
+
   margin-bottom: .5rem;
-  
+
 }
 
-.transferencia img{
-  width: 5rem;  
+.transferencia img {
+  width: 5rem;
 }
 
-.transferencia{
+.transferencia {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
 }
 
-.cbu{
+.cbu {
   padding: 1rem;
 }
 
-.mercadopago img{
+.mercadopago img {
   width: 15rem;
   margin-top: 1.5rem;
 }
 
-.mercadopago{
+.mercadopago {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
 }
 
-.mediosdepago{
+.mediosdepago {
   @extend %displayf-row;
   color: $azuloscuro;
 }
-.cbu li{
-  list-style: none;  
-  font-size: .8rem;
+
+.cbu {
+  li {
+    list-style: none;
+    font-size: .8rem;
+  }
 }
-.cvu li{
-  list-style: none;
-  font-size: .8rem;
+
+.cvu {
+
+  li {
+    list-style: none;
+    font-size: .8rem;
+  }
 }
-.cvu{
+
+.cvu {
   padding: 1rem;
 }
-.fechasdepago{
+
+.fechasdepago {
   text-align: center;
   padding: .5rem;
   font-size: .8rem;
@@ -104,47 +108,47 @@
 
 
 
-.container__ubicacion{
-  padding: 1rem; 
-   
-   
-      
-    
-     }
-    .ubicacion {
-      height: 50vh;
-    
-     background-color: #a8dadca8;
-     grid-column: 1 /span 3; 
-     
-     iframe {
-       width: 100%;
-       height: 100%;
-      
-      
-   }
-    
-    } 
- 
-    .tit-ubicacion{  
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: .9rem;
- 
-     h2{     
-   
-    color: $azuloscuro;
-    padding: .5rem;
-    }
-    img{
-      width: 3rem;
-      height: 3rem;
-      padding-bottom: .3rem;
-      
-      
-    }
+.container__ubicacion {
+  padding: 1rem;
+
+
+
+
+}
+
+.ubicacion {
+  height: 50vh;
+
+  background-color: #a8dadca8;
+  grid-column: 1 /span 3;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+
 
   }
-    
-    
+
+}
+
+.tit-ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .9rem;
+
+  h2 {
+
+    color: $azuloscuro;
+    padding: .5rem;
+  }
+
+  img {
+    width: 3rem;
+    height: 3rem;
+    padding-bottom: .3rem;
+
+
+  }
+
+}

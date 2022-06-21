@@ -248,7 +248,8 @@ footer {
   width: 10rem;
 }
 
-.principal__nov h2, .principal__nov h3 {
+.principal__nov h2,
+.principal__nov h3 {
   text-align: center;
   color: #003459;
   font-size: 3rem;
@@ -712,6 +713,12 @@ nav li {
     text-transform: uppercase;
     color: rgb(2, 45, 75);
   }
+  .tit-ubicacion {
+    /*//// animaciones /////*/
+    /* /////////CLASES/////////// */
+    /* //////CONTACTO////// */
+    /* //////ABOUT US///// */
+  }
   .tit-ubicacion span {
     font-size: 1rem;
     text-align: center;
@@ -719,74 +726,73 @@ nav li {
     color: #1D3557;
     width: 100%;
   }
-  .examenes {
+  .tit-ubicacion .examenes {
     flex-direction: column;
   }
-  .examenes h2 {
+  .tit-ubicacion .examenes h2 {
     font-size: 2rem;
     padding: 0.5rem;
   }
-  .examenes img {
+  .tit-ubicacion .examenes img {
     width: 20rem;
   }
-  .principal__nov-1,
-.principal__nov-2,
-.principal__nov-3 {
+  .tit-ubicacion .principal__nov-1,
+.tit-ubicacion .principal__nov-2,
+.tit-ubicacion .principal__nov-3 {
     width: 95vw;
     height: 90vh;
   }
-  .principal__nov-cars {
+  .tit-ubicacion .principal__nov-cars {
     flex-direction: column;
     align-items: center;
   }
-  .persona img {
+  .tit-ubicacion .persona img {
     width: 15vw;
   }
-  /*//// animaciones /////*/
-  /* /////////CLASES/////////// */
-  .clases__banner h1 {
+  .tit-ubicacion .clases__banner h1 {
     font-size: 2rem;
     width: 95vw;
     padding: 0.5rem;
     margin: 0 auto;
   }
-  .clases__banner p {
+  .tit-ubicacion .clases__banner p {
     font-size: 1rem;
     padding: 1rem 0;
   }
-  .clases__banner button {
+  .tit-ubicacion .clases__banner button {
     margin-top: 1.5rem;
     margin-left: 2.5rem;
   }
-  .cursos h2 {
+  .tit-ubicacion .cursos h2 {
     font-size: 2rem;
   }
-  .cursos p {
+  .tit-ubicacion .cursos p {
     font-size: 1rem;
     padding: 0.1rem;
   }
-  /* //////CONTACTO////// */
-  .mediosdepago {
+  .tit-ubicacion .mediosdepago {
     flex-direction: column;
   }
-  .mediosdepago__container {
+  .tit-ubicacion .mediosdepago__container {
     height: 150%;
   }
-  /* //////ABOUT US///// */
-  .sobrenos__caja {
+  .tit-ubicacion .sobrenos__caja {
     flex-direction: column;
   }
-  .sobrenos__4 {
+  .tit-ubicacion .sobrenos__4 {
     flex-direction: column;
     align-items: center;
   }
-  .valores,
-.vision {
+  .tit-ubicacion .valores,
+.tit-ubicacion .vision {
     width: 80vw;
     margin-bottom: 1rem;
   }
 }
 @media (max-width: 480px) {
+  .examenes {
+    flex-direction: column;
+  }
   .examenes p {
     font-size: 1rem;
   }
@@ -838,12 +844,15 @@ nav li {
   .principal__nov p {
     font-size: 1rem;
   }
+  .wordwall-caja iframe {
+    width: 70vw;
+    height: 25vh;
+  }
+  .w-caja-1 {
+    margin-bottom: 2rem;
+  }
   .juegos-titulo h2 {
     font-size: 2rem;
-  }
-  .principal__videoyt iframe {
-    width: 90vw;
-    height: 50vh;
   }
   .principal__opiniones h3 {
     font-size: 2rem;
@@ -858,9 +867,16 @@ nav li {
     margin-bottom: 0.5rem;
   }
   /*/////// clases ////////*/
-  .clases__banner p {
+  .clases__banner h1 {
+    font-size: 2rem;
+    width: 100vw;
+    padding: 0, 1rem;
+  }
+  .clases__banner--text p {
+    font-size: 1rem;
+    text-align: center;
     margin: 0 auto;
-    width: 80vw;
+    padding: 0;
   }
   .cardclases-mod {
     margin: 1rem;
@@ -873,32 +889,38 @@ nav li {
   .formulario__form form {
     margin: 0.5rem;
   }
-}
-.redes {
-  margin-bottom: 1rem;
-}
-
-.sobrenos__caja h1 {
-  font-size: 2rem;
-}
-.sobrenos__caja p {
-  margin: 1rem;
-}
-
-.sobrenos__3 img {
-  width: 8rem;
-}
-
-.card-mod {
-  background-color: rgba(10, 143, 238, 0.5058823529);
-  padding: 1.5rem;
-  box-shadow: 0.2rem 0.2rem 0.3rem;
-}
-.card-mod p {
-  text-align: center;
-  color: #144b72;
-  font-size: 1rem;
-  padding: 0.5rem;
+  .mediosdepago__container {
+    height: 100vh;
+  }
+  .mediosdepago {
+    flex-direction: column;
+  }
+  .redes {
+    margin-bottom: 1rem;
+  }
+  .sobrenos__caja {
+    flex-direction: column;
+  }
+  .sobrenos__caja h1 {
+    font-size: 2rem;
+  }
+  .sobrenos__caja p {
+    margin: 1rem;
+  }
+  .sobrenos__3 img {
+    width: 8rem;
+  }
+  .card-mod {
+    background-color: rgba(10, 143, 238, 0.5058823529);
+    padding: 1.5rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem;
+  }
+  .card-mod p {
+    text-align: center;
+    color: #144b72;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
