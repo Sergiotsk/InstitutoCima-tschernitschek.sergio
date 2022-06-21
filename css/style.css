@@ -203,7 +203,7 @@ footer {
   grid-row: 2/span 1;
   height: 40vh;
   width: 100%;
-  background: linear-gradient(rgba(57, 124, 163, 0.514), rgba(39, 64, 207, 0.438)), url(../assets/img/banerinicio.jpg);
+  background: linear-gradient(rgba(57, 124, 163, 0.514), rgba(39, 64, 207, 0.438)), url(../assets/img/banerinicio.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -396,7 +396,7 @@ nav li {
 
 .clases__banner {
   height: 60vh;
-  background: linear-gradient(rgba(57, 124, 163, 0.63), rgba(39, 64, 207, 0.438)), url(../assets/img/clasesbaner1.jpg);
+  background: linear-gradient(rgba(57, 124, 163, 0.63), rgba(39, 64, 207, 0.438)), url(../assets/img/clasesbaner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
