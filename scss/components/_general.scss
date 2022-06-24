@@ -4,7 +4,6 @@
   font-weight: 100;
 }
 
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -255,3 +254,16 @@ footer {
 .active {
   background-color: rgba(0, 0, 0, 0.123);
 }  
+
+/* iconos responsive */
+
+.mostrar-menu,
+.esconder-menu {
+  cursor: pointer;
+  display: none;
+  color: $secundario;
+  transition: .4s;
+} 
+#check {
+  display: none;
+}

@@ -1,21 +1,8 @@
-.container__ubicacion {
-  padding: 1rem;
-}
-
-.ubicacion {
-  height: 50vh;
-  background-color: rgba(168, 218, 220, 0.6588235294);
-  grid-column: 1/span 3;
-}
-.ubicacion iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.tit-ubicacion h2 {
-  text-align: center;
-  color: #003459;
-  padding: 3rem;
+.sobrenos__caja, .mediosdepago, .clases, .wordwall {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 * {
@@ -195,6 +182,19 @@ footer {
   background-color: rgba(0, 0, 0, 0.123);
 }
 
+/* iconos responsive */
+.mostrar-menu,
+.esconder-menu {
+  cursor: pointer;
+  display: none;
+  color: #ddab34;
+  transition: 0.4s;
+}
+
+#check {
+  display: none;
+}
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -203,7 +203,7 @@ footer {
   grid-row: 2/span 1;
   height: 40vh;
   width: 100%;
-  background: linear-gradient(rgba(57, 124, 163, 0.514), rgba(39, 64, 207, 0.438)), url(../assets/img/banerinicio.jpg);
+  background: linear-gradient(rgba(57, 124, 163, 0.514), rgba(39, 64, 207, 0.438)), url(../assets/img/banerinicio.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -230,32 +230,41 @@ footer {
 
 .examenes {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin: 5rem;
+  margin: 1rem;
 }
 .examenes p {
   color: #003459;
   text-align: center;
-  font-size: 2.2rem;
-  margin-top: 2rem;
-  width: 70vw;
+  font-size: 1.8rem;
+  font-family: "Roboto" sans-serif;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  width: 40rem;
 }
 
 .teacher {
   width: 10rem;
 }
 
-.linea {
-  width: 70vw;
-  height: 0.1rem;
-}
-
-.principal__nov h2 {
+.principal__nov h2,
+.principal__nov h3 {
   text-align: center;
   color: #003459;
   font-size: 3rem;
-  padding: 1rem;
+  padding: 2rem;
+}
+.principal__nov p {
+  text-align: center;
+  color: #144b72;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+}
+
+.carru-mod {
+  margin: 0 auto;
+  width: 70vw;
 }
 
 .principal__videoyt {
@@ -268,21 +277,11 @@ footer {
 
 .wordwall-caja iframe {
   width: 41vw;
-  height: 39vh;
+  height: 45vh;
 }
 
 .wordwall {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   width: 90vw;
-}
-
-.principal__videoyt-span {
-  width: 30rem;
-  height: 20rem;
-  background-color: #09b8ee;
-  margin: 1rem;
 }
 
 .juegos-titulo {
@@ -292,8 +291,10 @@ footer {
   margin: 0 auto;
 }
 .juegos-titulo h2 {
+  text-align: center;
+  color: #003459;
   font-size: 3rem;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .principal__opiniones-titulo {
@@ -345,7 +346,7 @@ footer {
 
 .caja .users h4 {
   color: #003459;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .caja .stars i {
@@ -393,44 +394,53 @@ nav li {
   display: inline-block;
 }
 
-/*//////////////////////////////HOME///////////////////////////////////////////*/
-/*///////////CLASES//////////// */
 .clases__banner {
   height: 60vh;
-  background: linear-gradient(rgba(57, 124, 163, 0.514), rgba(39, 64, 207, 0.438)), url(../assets/img/clasesbaner.jpg);
+  background: linear-gradient(rgba(57, 124, 163, 0.63), rgba(39, 64, 207, 0.438)), url(../assets/img/clasesbaner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
-.clases__banner__text {
-  width: 50vw;
-}
-
 .clases__banner h1 {
   color: #fff;
   font-size: 5vw;
   text-shadow: 0.1rem 0.1rem 0.1rem #000;
   width: 90vw;
-  padding: 0.8rem;
+  padding: 2rem;
 }
-
 .clases__banner p {
   color: #fff;
   font-size: 2.1vw;
-  width: 40rem;
+  width: 90%;
   text-align: left;
   padding: 1rem;
   margin: 2rem;
   text-transform: uppercase;
   text-shadow: 0.1rem 0.1rem 0.1rem #000;
 }
+.clases__banner p button {
+  background-color: #2153aa;
+  border-radius: 0.5rem;
+  border: none;
+  padding-bottom: 0.3rem;
+}
+.clases__banner p button:hover {
+  background-color: #102955;
+  transition: 0.8s;
+}
+.clases__banner p button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #f2f2f2;
+}
+
+.clases__banner__text {
+  width: 70vw;
+}
 
 .clases {
-  display: flex;
-  justify-content: space-around;
-  margin: 2rem;
   flex-wrap: wrap;
+  margin: 2rem;
 }
 
 .card-body-mod {
@@ -441,39 +451,36 @@ nav li {
 
 .cardclases-mod {
   box-shadow: 0.1rem 0.3rem 1rem #000;
+  margin-bottom: 1.5rem;
+}
+.cardclases-mod a {
+  background-color: #193e7f;
+}
+
+.cursos h2 {
+  text-align: center;
+  color: #003459;
+  font-size: 3rem;
+  padding: 2rem;
+}
+.cursos p {
+  text-align: center;
+  color: #144b72;
+  font-size: 1.8rem;
+  padding: 1rem;
   margin: 0.5rem;
 }
 
-.btn-mod {
-  background-color: #2153aa;
+.principal__contacto {
+  background-color: rgba(85, 157, 175, 0.37);
 }
 
-/* //////////Galeria/////////// */
-.galeria {
-  margin: 0.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0.5rem;
-}
-
-.fotos__caja {
-  display: flex;
-  justify-content: center;
-}
-
-.fotos__caja img {
-  width: 30vw;
-  box-shadow: 0.1rem 0.1rem 0.2rem black;
-}
-
-/* //////CONTACTO///////// */
 .formulario {
   display: flex;
   justify-content: center;
   padding: 1rem;
   height: 100%;
-  color: rgb(255, 255, 255);
+  color: #003459;
 }
 
 .formulario__form {
@@ -482,8 +489,6 @@ nav li {
   flex-direction: column;
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(rgba(57, 124, 163, 0.514), rgba(39, 64, 207, 0.308)), url(../assets/img/libros2.jpg);
-  background-size: cover;
 }
 
 .formulario__text img {
@@ -494,7 +499,6 @@ nav li {
 .mediosdepago__container {
   width: 100%;
   height: 60vh;
-  background-color: #195c9b;
   margin-bottom: 0.5rem;
 }
 
@@ -506,7 +510,7 @@ nav li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
+  margin-top: 2rem;
 }
 
 .cbu {
@@ -526,8 +530,7 @@ nav li {
 }
 
 .mediosdepago {
-  display: flex;
-  justify-content: space-evenly;
+  color: #003459;
 }
 
 .cbu li {
@@ -548,9 +551,39 @@ nav li {
   text-align: center;
   padding: 0.5rem;
   font-size: 0.8rem;
+  color: #003459;
 }
 
-/* ///////ABOUT US/////// */
+.container__ubicacion {
+  padding: 1rem;
+}
+
+.ubicacion {
+  height: 50vh;
+  background-color: rgba(168, 218, 220, 0.6588235294);
+  grid-column: 1/span 3;
+}
+.ubicacion iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.tit-ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+.tit-ubicacion h2 {
+  color: #003459;
+  padding: 0.5rem;
+}
+.tit-ubicacion img {
+  width: 3rem;
+  height: 3rem;
+  padding-bottom: 0.3rem;
+}
+
 .sobrenos {
   display: flex;
   flex-direction: column;
@@ -559,12 +592,10 @@ nav li {
 }
 
 .sobrenos__caja {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   padding: 0.9rem;
   box-shadow: 0.2rem 0.2rem 0.3rem;
   border-radius: 0.2rem;
+  width: 100%;
 }
 
 .sobrenos__1 {
@@ -581,11 +612,17 @@ nav li {
 }
 
 .sobrenos__caja img {
-  border-radius: 50%;
+  width: 10rem;
 }
 
-.sobrenos__caja p {
+.sobrenos__caja {
   margin: 0.5rem;
+  padding: 1rem;
+}
+.sobrenos__caja p {
+  text-align: left;
+  color: #144b72;
+  font-size: 1.2rem;
   padding: 0.5rem;
 }
 
@@ -597,44 +634,32 @@ nav li {
 }
 
 .card-mod {
-  background-color: #0a8fee;
+  background-color: rgba(10, 143, 238, 0.5058823529);
   padding: 1.5rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem;
+}
+.card-mod p {
+  text-align: center;
+  color: #144b72;
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 .titulos h5 {
   text-align: center;
+  color: #003459;
+  font-size: 3rem;
   padding: 0.5rem;
   margin: 0.5rem;
 }
 
 .sobrenos__caja h1 {
+  text-align: center;
+  color: #003459;
+  font-size: 3rem;
   padding: 0.5rem;
 }
 
-/* /////RAMA ANIMACIONES///// */
-.banner h1 {
-  transition: 4s;
-}
-
-.banner__text span {
-  transition: ease-out;
-}
-
-/* ///////////////////////////// */
-/* iconos responsive */
-.mostrar-menu,
-.esconder-menu {
-  cursor: pointer;
-  display: none;
-  color: #ddab34;
-  transition: 0.4s;
-}
-
-#check {
-  display: none;
-}
-
-/*   RESPONSIVE*/
 @media (max-width: 768px) {
   .mostrar-menu,
 .esconder-menu {
@@ -655,6 +680,9 @@ nav li {
     padding: 5rem 0;
     z-index: 100;
     transition: 0.4s;
+  }
+  .menu li {
+    padding: 0.8rem;
   }
   nav ul {
     display: flex;
@@ -685,6 +713,12 @@ nav li {
     text-transform: uppercase;
     color: rgb(2, 45, 75);
   }
+  .tit-ubicacion {
+    /*//// animaciones /////*/
+    /* /////////CLASES/////////// */
+    /* //////CONTACTO////// */
+    /* //////ABOUT US///// */
+  }
   .tit-ubicacion span {
     font-size: 1rem;
     text-align: center;
@@ -692,66 +726,76 @@ nav li {
     color: #1D3557;
     width: 100%;
   }
-  .examenes {
+  .tit-ubicacion .examenes {
     flex-direction: column;
   }
-  .examenes h2 {
+  .tit-ubicacion .examenes h2 {
     font-size: 2rem;
     padding: 0.5rem;
   }
-  .examenes img {
+  .tit-ubicacion .examenes img {
     width: 20rem;
   }
-  .principal__nov-1, .principal__nov-2, .principal__nov-3 {
+  .tit-ubicacion .principal__nov-1,
+.tit-ubicacion .principal__nov-2,
+.tit-ubicacion .principal__nov-3 {
     width: 95vw;
     height: 90vh;
   }
-  .principal__nov-cars {
+  .tit-ubicacion .principal__nov-cars {
     flex-direction: column;
     align-items: center;
   }
-  .persona img {
+  .tit-ubicacion .persona img {
     width: 15vw;
   }
-  /*//// animaciones /////*/
-  /* /////////CLASES/////////// */
-  .clases__banner h1 {
-    font-size: 1.7rem;
+  .tit-ubicacion .clases__banner h1 {
+    font-size: 2rem;
+    width: 95vw;
+    padding: 0.5rem;
+    margin: 0 auto;
   }
-  .clases__banner--text p {
-    width: 70%;
-    font-size: 1.2rem;
+  .tit-ubicacion .clases__banner p {
+    font-size: 1rem;
+    padding: 1rem 0;
   }
-  .clases__art img {
-    width: 80vw;
+  .tit-ubicacion .clases__banner button {
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
   }
-  .clases__art--text {
-    width: 80vw;
+  .tit-ubicacion .cursos h2 {
+    font-size: 2rem;
   }
-  /* //////CONTACTO////// */
-  .formulario {
-    height: 130vh;
+  .tit-ubicacion .cursos p {
+    font-size: 1rem;
+    padding: 0.1rem;
   }
-  .mediosdepago {
+  .tit-ubicacion .mediosdepago {
     flex-direction: column;
   }
-  .mediosdepago__container {
+  .tit-ubicacion .mediosdepago__container {
     height: 150%;
   }
-  /* //////ABOUT US///// */
-  .sobrenos__caja {
+  .tit-ubicacion .sobrenos__caja {
     flex-direction: column;
   }
-  .sobrenos__4 {
+  .tit-ubicacion .sobrenos__4 {
     flex-direction: column;
     align-items: center;
   }
-  .valores, .vision {
+  .tit-ubicacion .valores,
+.tit-ubicacion .vision {
     width: 80vw;
     margin-bottom: 1rem;
   }
 }
 @media (max-width: 480px) {
+  .examenes {
+    flex-direction: column;
+  }
+  .examenes p {
+    font-size: 1rem;
+  }
   footer {
     flex-direction: column;
     height: 90vh;
@@ -788,21 +832,30 @@ nav li {
     padding: 0.5rem;
     width: 100%;
     margin-top: 0.1rem;
-    text-align: left;
+    text-align: center;
   }
   .examenes img {
     width: 7rem;
   }
-  .principal__nov-1, .principal__nov-2, .principal__nov-3 {
-    width: 95vw;
-    height: 30vh;
+  .principal__nov h2,
+.principal__nov h3 {
+    font-size: 2rem;
   }
-  .principal__videoyt iframe {
-    width: 90vw;
-    height: 50vh;
+  .principal__nov p {
+    font-size: 1rem;
   }
-  .principal__opiniones-titulo i {
-    display: none;
+  .wordwall-caja iframe {
+    width: 70vw;
+    height: 25vh;
+  }
+  .w-caja-1 {
+    margin-bottom: 2rem;
+  }
+  .juegos-titulo h2 {
+    font-size: 2rem;
+  }
+  .principal__opiniones h3 {
+    font-size: 2rem;
   }
   .caja .fa-user {
     right: 1rem;
@@ -814,23 +867,60 @@ nav li {
     margin-bottom: 0.5rem;
   }
   /*/////// clases ////////*/
-  .clases__banner p {
+  .clases__banner h1 {
+    font-size: 2rem;
+    width: 100vw;
+    padding: 0, 1rem;
+  }
+  .clases__banner--text p {
+    font-size: 1rem;
+    text-align: center;
     margin: 0 auto;
-    width: 80vw;
+    padding: 0;
   }
   .cardclases-mod {
     margin: 1rem;
   }
-  .valores, .vision {
+  .valores,
+.vision {
     width: 70vw;
   }
   /* ////contacto//// */
   .formulario__form form {
     margin: 0.5rem;
   }
-}
-.redes {
-  margin-bottom: 1rem;
+  .mediosdepago__container {
+    height: 100vh;
+  }
+  .mediosdepago {
+    flex-direction: column;
+  }
+  .redes {
+    margin-bottom: 1rem;
+  }
+  .sobrenos__caja {
+    flex-direction: column;
+  }
+  .sobrenos__caja h1 {
+    font-size: 2rem;
+  }
+  .sobrenos__caja p {
+    margin: 1rem;
+  }
+  .sobrenos__3 img {
+    width: 8rem;
+  }
+  .card-mod {
+    background-color: rgba(10, 143, 238, 0.5058823529);
+    padding: 1.5rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem;
+  }
+  .card-mod p {
+    text-align: center;
+    color: #144b72;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
