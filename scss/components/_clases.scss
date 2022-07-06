@@ -23,22 +23,7 @@
         text-transform: uppercase;
         text-shadow:0.1rem 0.1rem 0.1rem #000; 
 
-        button{
-          background-color: $primario;
-          border-radius: .5rem;
-          border: none;
-          padding-bottom: .3rem;
-          &:hover{
-            background-color:darken($color: $primario, $amount: 20);
-            transition: .8s;
-          }
-          a{
-            text-decoration: none;
-            font-size: 1.2rem;
-           
-            color: $blanco;
-          }
-        }
+       
       }
 }
 
@@ -87,11 +72,14 @@
 
    }
    p{
-    text-align: map-get($parrafos , alineacioncentro );    
+    text-align: map-get($parrafos , justificado);    
     color: map-get($parrafos ,  color2 );
-    font-size: map-get($parrafos , fzxl );
-    padding: 1rem;
-    margin: .5rem;
+    font-size: map-get($parrafos , fzlarge );
+    padding: auto;
+    margin: 2rem;
+    font-family: map-get($parrafos, fm );
+    
+   
 
 
 

@@ -48,7 +48,6 @@
     color: $azuloscuro;
     text-align: center;
     font-size: map-get($parrafos, fzxl);
-    font-family: map-get($parrafos, fm);
     margin-top: 1.5rem;
     padding: 1.5rem;
     width: 40rem;
@@ -77,10 +76,11 @@
   }
 
   p {
-    text-align: map-get($parrafos, alineacioncentro);
+    text-align: map-get($parrafos, justificado);
     color: map-get($parrafos, color2);
     font-size: map-get($parrafos, fzxl);
     padding: .5rem;
+    font-family: map-get($parrafos, fm );
 
 
 

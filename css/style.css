@@ -238,7 +238,6 @@ footer {
   color: #003459;
   text-align: center;
   font-size: 1.8rem;
-  font-family: "Roboto" sans-serif;
   margin-top: 1.5rem;
   padding: 1.5rem;
   width: 40rem;
@@ -256,10 +255,11 @@ footer {
   padding: 2rem;
 }
 .principal__nov p {
-  text-align: center;
+  text-align: justify;
   color: #144b72;
   font-size: 1.8rem;
   padding: 0.5rem;
+  font-family: "Baloo 2";
 }
 
 .carru-mod {
@@ -418,21 +418,6 @@ nav li {
   text-transform: uppercase;
   text-shadow: 0.1rem 0.1rem 0.1rem #000;
 }
-.clases__banner p button {
-  background-color: #2153aa;
-  border-radius: 0.5rem;
-  border: none;
-  padding-bottom: 0.3rem;
-}
-.clases__banner p button:hover {
-  background-color: #102955;
-  transition: 0.8s;
-}
-.clases__banner p button a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #f2f2f2;
-}
 
 .clases__banner__text {
   width: 70vw;
@@ -464,11 +449,12 @@ nav li {
   padding: 2rem;
 }
 .cursos p {
-  text-align: center;
+  text-align: justify;
   color: #144b72;
-  font-size: 1.8rem;
-  padding: 1rem;
-  margin: 0.5rem;
+  font-size: 1.5rem;
+  padding: auto;
+  margin: 2rem;
+  font-family: "Baloo 2";
 }
 
 .principal__contacto {
@@ -624,6 +610,7 @@ nav li {
   color: #144b72;
   font-size: 1.2rem;
   padding: 0.5rem;
+  font-family: "Baloo 2";
 }
 
 .sobrenos__4 {
@@ -643,6 +630,7 @@ nav li {
   color: #144b72;
   font-size: 1.5rem;
   padding: 0.5rem;
+  font-family: "Baloo 2";
 }
 
 .titulos h5 {
@@ -768,7 +756,7 @@ nav li {
   }
   .tit-ubicacion .cursos p {
     font-size: 1rem;
-    padding: 0.1rem;
+    margin: 5rem;
   }
   .tit-ubicacion .mediosdepago {
     flex-direction: column;
@@ -840,6 +828,8 @@ nav li {
   .principal__nov h2,
 .principal__nov h3 {
     font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0;
   }
   .principal__nov p {
     font-size: 1rem;
@@ -871,6 +861,13 @@ nav li {
     font-size: 2rem;
     width: 100vw;
     padding: 0, 1rem;
+  }
+  .cursos h2 {
+    font-size: 2rem;
+  }
+  .cursos p {
+    font-size: 1rem;
+    margin: 0;
   }
   .clases__banner--text p {
     font-size: 1rem;
@@ -906,6 +903,10 @@ nav li {
   }
   .sobrenos__caja p {
     margin: 1rem;
+    text-align: justify;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
   }
   .sobrenos__3 img {
     width: 8rem;
@@ -916,10 +917,9 @@ nav li {
     box-shadow: 0.2rem 0.2rem 0.3rem;
   }
   .card-mod p {
-    text-align: center;
+    text-align: justify;
     color: #144b72;
     font-size: 1rem;
-    padding: 0.5rem;
   }
 }
 

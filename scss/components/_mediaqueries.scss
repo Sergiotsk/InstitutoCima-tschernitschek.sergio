@@ -152,7 +152,7 @@
       p {
 
         font-size: map-get($parrafos, fzsmall);
-        padding: .1rem;
+        margin: 5rem;
 
 
 
@@ -283,11 +283,14 @@
     h3 {
 
       font-size: map-get($titulos, fzsmall);
+      margin: 0;
+      padding:  1rem 0;
     }
 
     p {
 
       font-size: map-get($parrafos, fzsmall);
+
 
 
     }
@@ -349,6 +352,25 @@
      
    }
   }
+  .cursos {
+    h2 {
+
+      font-size: map-get($titulos, fzsmall);
+
+
+    }
+
+    p {
+
+      font-size: map-get($parrafos, fzsmall);
+      margin: 0;
+  
+
+    }
+
+
+  }
+
   .clases__banner--text{
     p{
       font-size: map-get($parrafos, fzsmall );
@@ -407,6 +429,11 @@
 
   p {
     margin: 1rem;
+    text-align: map-get($parrafos, justificado );
+    font-size: map-get($parrafos, fzsmall );
+    padding: 0;
+    margin: 0;
+
   }
 }
 
@@ -423,10 +450,10 @@
   box-shadow: .2rem .2rem .3rem;
 
   p {
-    text-align: map-get($parrafos, alineacioncentro);
+    text-align: map-get($parrafos, justificado);
     color: map-get($parrafos, color2);
     font-size: map-get($parrafos, fzsmall);
-    padding: .5rem;
+    
 
 
 

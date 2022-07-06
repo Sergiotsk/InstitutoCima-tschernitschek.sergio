@@ -41,6 +41,7 @@
       color: map-get($parrafos ,  color2 );     
      font-size: 1.2rem;
       padding: .5rem;
+      font-family: map-get($parrafos,fm );
      
      
     
@@ -66,7 +67,7 @@
       color: map-get($parrafos ,  color2 );
       font-size: map-get($parrafos , fzlarge );
       padding: .5rem;
-     
+     font-family: map-get($parrafos, fm );
      
     
    
