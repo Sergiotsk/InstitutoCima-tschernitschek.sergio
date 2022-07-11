@@ -400,7 +400,7 @@ nav li {
 }
 
 .clases__banner {
-  height: 40vh;
+  height: 45vh;
   background: linear-gradient(rgba(57, 124, 163, 0.63), rgba(39, 64, 207, 0.438)), url(../assets/img/clasesbaner.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -585,6 +585,11 @@ nav li {
   width: 3rem;
   height: 3rem;
   padding-bottom: 0.3rem;
+}
+
+.googleform {
+  width: 30vw;
+  height: 150vh;
 }
 
 .sobrenos {
