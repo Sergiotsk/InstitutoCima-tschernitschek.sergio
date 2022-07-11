@@ -400,7 +400,7 @@ nav li {
 }
 
 .clases__banner {
-  height: 60vh;
+  height: 40vh;
   background: linear-gradient(rgba(57, 124, 163, 0.63), rgba(39, 64, 207, 0.438)), url(../assets/img/clasesbaner.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -437,6 +437,13 @@ nav li {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.card-body-mod h5 {
+  color: #003459;
+}
+.card-body-mod p {
+  font-size: 1rem;
+  color: #144b72;
 }
 
 .cardclases-mod {

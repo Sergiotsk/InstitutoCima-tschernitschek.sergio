@@ -1,6 +1,6 @@
 
 .clases__banner {
-  height: 60vh;
+  height: 40vh;
   background: linear-gradient( rgba(57, 124, 163, 0.63),rgba(39, 64, 207, 0.438)),url(../assets/img/clasesbaner.webp);
   @include imagenfondo();
  
@@ -46,6 +46,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  h5{
+    color: $azuloscuro;
+  }
+  p{
+    font-size: map-get($parrafos, fzsmall );
+    color: $azulp;
+    
+    
+  }
   
   
   
